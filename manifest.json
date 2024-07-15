@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Phishing URL Detector",
+  "version": "1.0",
+  "description": "Alerts you when you visit a phishing URL.",
+  "permissions": [
+      "webNavigation",
+      "activeTab",
+      "http://127.0.0.1:5000/*",
+      "notifications"
+  ],
+  "background": {
+      "scripts": ["background.js"]
+  },
+  "browser_action": {
+      "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'; connect-src http://127.0.0.1:5000"
+}
