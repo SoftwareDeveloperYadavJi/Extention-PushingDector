@@ -3,6 +3,11 @@
   "name": "Phishing URL Detector",
   "version": "1.0",
   "description": "Alerts you when you visit a phishing URL.",
+  "icons":{
+    "16": "Extention_Logo_Pishing_Url.png",
+    "48": "Extention_Logo_Pishing_Url.png",
+    "128": "Extention_Logo_Pishing_Url.png"
+  },
   "permissions": [
       "webNavigation",
       "activeTab",
@@ -13,7 +18,8 @@
       "scripts": ["background.js"]
   },
   "browser_action": {
-      "default_popup": "popup.html"
+      "default_popup": "popup.html",
+      "default_icon": "Extention_Logo_Pishing_Url.png"
   },
   "content_security_policy": "script-src 'self'; object-src 'self'; connect-src http://127.0.0.1:5000"
 }
